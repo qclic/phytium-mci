@@ -8,7 +8,7 @@ extern crate alloc;
 
 use core::time::Duration;
 
-use bare_test::{driver::device_tree::get_device_tree, mem::mmu::iomap, time::delay};
+use bare_test::{driver::device_tree::get_device_tree, mem::mmu::iomap, println, time::delay};
 use log::*;
 use phytium_mci::*;
 
