@@ -4,12 +4,14 @@ extern crate alloc;
 
 use core::time::Duration;
 
-mod constants;
+#[macro_use]
 mod regs;
-mod err;
-mod mci;
+pub mod mci;
+pub mod iopad;
+mod tools;
 
 pub use mci::*;
+pub use iopad::*;
 
 pub trait Kernel {
     fn sleep(duration: Duration);

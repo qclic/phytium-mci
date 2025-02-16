@@ -1,2 +1,3 @@
 /target
 .bare-test*
+.codemap/main-panel.json
